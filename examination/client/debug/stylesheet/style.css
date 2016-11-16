@@ -1,0 +1,170 @@
+#desktopBar {
+    background-color: darkred;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 56px;
+    width: 100%;
+    z-index: 999999999999999999999999999999;
+}
+
+#memory, #chat, #calc, #about {
+    background-color: dimgray;
+    font-size: 14px;
+    color: whitesmoke;
+    padding: 5px;
+    height: 38px;
+    width: 38px;
+    float: left;
+    margin-left: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+    z-index: 1;
+    text-align: center;
+    line-height: 65px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+#memory:hover, #chat:hover, #calc:hover, #about:hover {
+    background-color: gray;
+}
+#memory:active, #chat:active, #calc:active, #about:active {
+    background-color: darkslategray;
+}
+.memoryLogo, .chatLogo, .calcLogo, .aboutLogo {
+    float: left;
+    height: 50px;
+    width: 50px;
+}
+html {
+    position: relative;
+    min-height: 100%;
+}
+body {
+    margin: 0 0 70px; /* bottom = footer height */
+    background: url("http://i40.tinypic.com/2ho9szs.gif") repeat;
+    overflow: hidden;
+}
+.window {
+    width: 500px;
+    height: 550px;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    left: 10px;
+    top: 10px;
+    position: absolute;
+}
+
+.windowTaskbar {
+    width: 100%;
+    height: 30px;
+    background-color: dimgray;
+    cursor: move;
+    border-bottom: solid black 1px;
+    line-height: 30px;
+    color: white;
+}
+.windowClose {
+    float: right;
+    width: 40px;
+    height: 30px;
+    background-color: red;
+    border-left: solid 1px black;
+    cursor: pointer;
+}
+.windowClose:hover {
+    background-color: darkred;
+}
+.window img {
+    width: 25%;
+}
+
+.removed {
+    visibility: hidden;
+}
+.timer {
+    width: 100%;
+    text-align: center;
+    margin-left: -30px;
+}
+
+.messageArea {
+    width: 99%;
+    height: 50px;
+    position: absolute;
+    bottom: 2px;
+    left: 0.4%;
+}
+
+.messages {
+    width: 99%;
+    height: 440px;
+    float: right;
+    overflow-y: scroll;
+    margin-top: 2px;
+}
+.text {
+    width: 100%;
+}
+.usernameArea {
+    color: dimgray;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+}
+.centeredDiv {
+    width: 100%;
+    text-align: center;
+    margin-top: 100px;
+}
+.aboutDiv {
+    width: 100%;
+    text-align: center;
+}
+
+.logoDiv {
+    float: left;
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    cursor: default;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.logoDiv img {
+    height: 30px;
+    width: 30px;
+}
+.calcResult {
+    float: left;
+    width: 98%;
+    margin: 0.9%;
+}
+.calcButtons {
+    margin-right: 10%;
+    margin-left: 10%;
+    width: 90%;
+}
+.calcProblem {
+    width: 100%;
+    height: 15px;
+    text-align: center;
+    color: dimgrey;
+    margin-bottom: 3px;
+}
+.result {
+    width: 100%;
+    height: 80px;
+    font-size: 24px;
+}
+.calc0, .calc1, .calc2, .calc3, .calc4, .calc5, .calc6, .calc7, .calc8, .calc9,
+.calcAdd, .calcDiv, .calcMulti, .calcSub, .calcDecimal, .calcSolve, .calcLeftPar, .calcRightPar, .calcAns, .calcClear {
+    float: left;
+    width: 95px;
+    height: 80px;
+    font-size: 25px;
+}
+.calcButtonsNumbers {
+    width: 100%;
+}

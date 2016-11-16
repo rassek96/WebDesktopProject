@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <title>Desktop</title>
+        <link rel="stylesheet" href="./stylesheet/style.css">
+        <link rel="shortcut icon" href="image/favicon.png">
+    </head>
+    <body>
+    <div id="desktop">
+        <div id="memoryContainer">
+            <template><a href="#"><img src="image/0.png" alt="A memory brick" /></a></template>
+            <template id="timeButtons">
+                <div>
+                    <div class="centeredDiv">
+                        <h2>Memory</h2>
+                        <input class="buttonTime" value="Time" type="submit">
+                        <input class="buttonNoTime" value="No Time" type="submit">
+                    </div>
+                </div>
+            </template>
+        </div>
+
+        <template id="logoTemplate">
+            <div>
+                <div class="logoDiv">
+                    <img src="image/Logo/memoryLogo.svg" alt="" class="memoryLogo">
+                    <img src="image/Logo/chatLogo.svg" alt="" class="chatLogo">
+                    <img src="image/Logo/calcLogo.svg" alt="" class="calcLogo">
+                    <img src="image/Logo/aboutLogo.svg" alt="" class="aboutLogo">
+                </div>
+            </div>
+        </template>
+
+        <template id="windowTemplate">
+            <div class="window">
+                <div class="windowTaskbar">
+                    <div class="logoDiv">
+
+                    </div>
+                    <div class="windowButtons">
+                        <div class="WindowClose"></div>
+                    </div>
+                </div>
+                <div class="contentDiv">
+                    <div class="timer"></div>
+                </div>
+            </div>
+        </template>
+
+        <template id="chatTemplate">
+            <div class="chat">
+                <div class="messages">
+                    <template>
+                        <div class="message">
+                            <div class="text"></div>
+                        </div>
+                    </template>
+                </div>
+                <div class="usernameArea"></div>
+                <textarea class="messageArea"></textarea>
+            </div>
+            <div>
+                <div class="changeUserDiv">
+                    <input type="text" class="changeUserText">
+                    <input type="submit" value="Change Username" class="changeUserNext">
+                </div>
+
+            </div>
+        </template>
+
+        <template id="usernameTemplate">
+            <div>
+                <input class="userNameInput" type="text">
+                <input class="userNameSubmit" type="submit" value="Next">
+            </div>
+        </template>
+
+        <template id="aboutTemplate">
+            <div>
+                <div class="aboutDiv">
+                    <h3>Credit</h3>
+                    <p>Icons taken from <a href="https://www.thenounproject.com">The Noun Project</a>, <br>
+                        made by: <br>Shai Rilov<br>Nikita Kozin<br>Creative Stall<br>ChangHoon Baek</p>
+                </div>
+            </div>
+        </template>
+
+        <template id="calcTemplate">
+            <div>
+                <div class="calcResult">
+                    <div class="calcProblem"></div>
+                    <input type="input" class="result" disabled="disabled" value="">
+                </div>
+                <div class="calcButtons">
+                    <div class="calcButtonsNumbers">
+                        <input type="submit" class="calc1" value="1">
+                        <input type="submit" class="calc2" value="2">
+                        <input type="submit" class="calc3" value="3">
+                        <input type="submit" class="calcAdd" value="+">
+                        <input type="submit" class="calc4" value="4">
+                        <input type="submit" class="calc5" value="5">
+                        <input type="submit" class="calc6" value="6">
+                        <input type="submit" class="calcSub" value="-">
+                        <input type="submit" class="calc7" value="7">
+                        <input type="submit" class="calc8" value="8">
+                        <input type="submit" class="calc9" value="9">
+                        <input type="submit" class="calcMulti" value="*">
+                        <input type="submit" class="calc0" value="0">
+                        <input type="submit" class="calcDecimal" value=".">
+                        <input type="submit" class="calcSolve" value="=">
+                        <input type="submit" class="calcDiv" value="/">
+                        <input type="submit" class="calcLeftPar" value="(">
+                        <input type="submit" class="calcRightPar" value=")">
+                        <input type="submit" class="calcAns" value="Ans" name="0">
+                        <input type="submit" class="calcClear" value="Clear">
+                    </div>
+                </div>
+            </div>
+        </template>
+    </div>
+    <div id="desktopBar">
+        <div id="memory"><img src="/image/Logo/memoryLogo.svg" alt="M"></div>
+        <div id="chat"><img src="/image/Logo/chatLogo.svg" alt="Chat"></div>
+        <div id="calc"><img src="/image/Logo/calcLogo.svg" alt="Calc"></div>
+        <div id="about"><img src="image/Logo/aboutLogo.svg" alt="i"></div>
+    </div>
+    <script src="./javascript/build.js"></script>
+    </body>
+</html>
